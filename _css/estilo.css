@@ -1,38 +1,37 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web);
-@font-face {
+/*@font-face {
     font-family: 'FonteLogo';
-    src: url("../_fonts/bubblegum-sans-regular.otf");    
-}
-     body {
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}*/
+            body {
          font-family: Arial, sans-serif;
          background-color: #dddddd;
          color: rgba(0,0,0,1);
          background: url("../_imagens/fundo.jpg") no-repeat center;
-         background-size: 100%;
-         margin-bottom: 210px;
-                
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+          background-size: cover;
             }
             
-            div#interface {
+           div#interface {
                 width: 1100px;
-                height: 250px;
                 background-color: rgba(256,256,256,.6);
                 margin: -20px auto 0px auto;
                 box-shadow: 0px 0px 10px rgba(0,0,0,.5);
                 padding: 10px;
                 border-radius: 5px;
-                
             }
             
             p {
-                
+                font-family: Arial, sans-serif;
                 text-align: justify;
                 text-indent: 50px;
                 }
                 
                 a {
-                    color: #606060;
+                    color: #343a5c;
                     text-decoration: none; 
                 }
                 
@@ -42,30 +41,29 @@
                 
                 header#cabecalho img#icone {
                     position: relative;
-                    left: 850px;
-                    top: -150px;
+                    left: 930px;
+                    bottom: 90px;
                 }
                 
-                header#cabecalho img#predio-icone {
-                    float: left;
-                    
+                header#cabecalho img#predio {
+                    position: relative;
+                    left: -5px;
+                    bottom: -5px;
                 }
+                
                 
                 header#cabecalho {
-                   /*border: 1px #606060 solid;
-                   height: 150px;
-                   border: solid red;*/
-                   }
-                   
+                   border-bottom: 1px #606060 solid;
+                   height: 130px;
+                }
                 
                 header#cabecalho h1 {
                     font-family: 'Titillium Web', sans-serif;
-                    font-size: 25pt;
+                    font-size: 30pt;
                     color: #ffffff;
-                    text-shadow: 2px 2px 4px black;
+                    text-shadow: 2px 2px 2px rgba(0,0,0,.8);
                     padding: 0px;
-                    margin-bottom: 0px;
-                    margin-top: 40px;
+                    margin-top: 0px;
                 }
                 
                 .direita {
@@ -74,32 +72,29 @@
                 
                 header#cabecalho h2 {
                     font-family: 'Titillium Web', sans-serif;
-                    color: #dddddd;
-                    text-shadow: 2px 2px 4px black;
+                    color: #ffffff;
+                    text-shadow: 2px 2px 2px black;
                     font-size: 15pt;
                     padding: 0px;
-                    margin-top: -10px;
+                    margin-top: -36px;
                 }
                 
-                header#cabecalho .endereco {
+                header#cabecalho h3 {
                     font-family: 'Titillium Web', sans-serif;
-                    color: #606060;
-                    font-size: 15pt;
+                    color: #000000;
+                    font-size: 13pt;
                     padding: 0px;
-                    margin-top: 45px;
-                    text-indent: 50px;
+                    margin-top: -20px;
+                    text-indent: 30px;
                 }
-                
-                header#cabecalho hr{
-                    width: 600px;
-                    margin-left: -50px;
-                    color: black;
-                }
+            
 /* Formatação de imagens com legendas  */
 
 figure.foto-legenda {
     position: relative;
-    border: 8px solid withe;
+    width: 100%;
+    margin-left: 0px;
+    border: 1px solid #ffffff;
     box-shadow: 1px 1px 4px black;
 }
 
@@ -126,6 +121,16 @@ figure.foto-legenda:hover figcaption{
 	opacity: 1;
 	position: absolute;
     }
+    
+        aside#lateral {
+          display: block;
+          width: 400px;
+          float: right;
+          background-color: rgba(127,135,146,.5);
+          padding: 20px;
+          margin-top: -385px;
+          box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+        }
 
     /* Formatação do Menu */
     
@@ -138,18 +143,18 @@ figure.foto-legenda:hover figcaption{
       text-transform: uppercase;
       position: absolute;
       top: -20px;
-      left: 505px;
+      left: 930px;
       }
       
       nav#menu li {
          display: inline-block;
-         background-color: #dddddd;
+         background-color: #6a7d83;
          padding: 10px;
          transition: background-color 1s;
       }
       
       nav#menu li:hover {
-        background-color: #606060;  
+        background-color: #dddddd;  
       }
       
       nav#menu h1 {
@@ -157,21 +162,18 @@ figure.foto-legenda:hover figcaption{
       }
       
       nav#menu a {
-         color: #000000; 
+         color: #ffffff; 
          text-decoration: none;
       }
       
       nav#menu a:hover {
-          color: #ffffff;
+          color: #000000;
           
       }
       
       section#corpo {
          display: block;
-         width: 550px;  
-         float: left;
-         border-right: 1px solid #606060;
-         padding-right: 15px; 
+         width: 650px;
       }
       
       article#noticia-principal h2 {
@@ -183,98 +185,23 @@ figure.foto-legenda:hover figcaption{
       }
       
       header#cabecalho-artigo h1 {
-          font-family: 'FonteLogo' , sans-serif;
+          font-family: 'Titillium Web' , sans-serif;
           font-size: 20pt;
-          color: #606060;
+          color: #ffffff;
+          text-shadow: 1px 1px 2px black;
           margin-bottom: 0px;
           margin-top: 0px;
       }
       
       header#cabecalho-artigo h2 {
-          font-size: 13pt;
-          color: #cecece;
-          background-color: #ffffff;
-          margin-top: 0px;
-          
-      }
-      
-      header#cabecalho-artigo h3 {
-          font-size: 13pt;
-          color: #606060;
-          
-      }
-      
-      table#tabelaspec {
-          border: 1px solid #606060;
-          border-spacing: 0px;
-          margin-left: auto;
-          margin-right: auto;
-      }
-      
-      table#tabelaspec td {
-          border: 1px solid #606060;
-          padding: 10px;
-          text-align: center;
-          vertical-align: middle;
-      }
-      
-      table#tabelaspec td.ce {
-          color: #ffffff;
-          background-color: #606060;
-          vertical-align: top;
-          font-weight: bold;
-          
-      }
-      
-      table#tabelaspec td.cd {
-          background-color: #cecece;
-         
-      }
-      
-      table#tabelaspec caption {
-          color: #888888;
-          font-size: 13pt;
-          font-weight: bolder;
-          
-      }
-      
-      table#tabelaspec caption span {
-          display: block;
-          float: right;
-          color: #000000;
-          font-size: 8pt;
-          margin-top: 10px;
-      }
-      
-      aside#lateral {
-          display: block;
-          width: 400px;
-          float: right;
-          background-color: #dddddd;
-          padding: 10px;
-          margin-top: 10px;
-          box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-      }
-      
-      aside#lateral h1 {
-          font-family: 'FonteLogo' , sans-serif;
-          font-size: 20pt;
-          color: #606060;
-          margin-top: 0px;
-          
-      }
-      
-      aside#lateral h2 {
-          background-color: #606060;
-          font-size: 13pt;
-          color: #ffffff;
-          padding: 5px;
+          font-size: 12pt;
+          color: #433c58;
+          text-shadow: 1px 1px 1px white;
       }
       
       footer#rodape {
           clear: both;
           border-top: 1px solid #606060;
-          margin-top: 400px;
       }
       
       footer#rodape p {
